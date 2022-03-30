@@ -1,5 +1,4 @@
-/* Generated with coolers.co */
-/* CSS HEX */
+/* CSS Variables */
 :root {
     --blue: #9adcffff;
     --blue-darker: rgb(54, 185, 255);
@@ -8,15 +7,14 @@
     --pink: #ff8aaeff;
     --gray: #6d676eff;
     --white-shade: #Fdfcfa;
-}
 
-/* 
-Google Font References
-font-family: 'Emilys Candy', cursive;
-font-family: 'Lato', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Chewy', cursive;
-font-family: 'Limelight', cursive; */
+    /* font variables for convenience */
+    --font-candy: 'Emilys Candy', cursive;
+    --font-lato: 'Lato', cursive;
+    --font-montserrat: 'Montserrat', cursive;
+    --font-chewy: 'Chewy', cursive;
+    --font-limelight: 'Limelight', cursive;
+}
 
 /* Sitewide default overides */
 a:link,
@@ -61,7 +59,7 @@ body {
 
 /* navbar links */
 .navbar ul li a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-montserrat);
     font-weight: 800;
     font-size: 1.4rem;
     color: var(--blue);
@@ -87,7 +85,7 @@ body {
 
 /* navbar brandname */
 #pugly {
-    font-family: 'Chewy', cursive;
+    font-family: var(--font-chewy);
     font-size: 2.0rem;
     display: inline;
     padding-left: 0;
@@ -96,7 +94,7 @@ body {
 
 /* navbar brandname */
 #seperator {
-    font-family: 'Montserrat', cursive;
+    font-family: var(--font-montserrat);
     font-size: 1.9rem;
     margin: 2%;
     display: inline;
@@ -106,7 +104,7 @@ body {
 
 /* navbar brandname */
 #beautiful {
-    font-family: 'Limelight', cursive;
+    font-family: var(--font-limelight);
     font-size: 1.7rem;
     display: inline;
     padding-left: 0;
@@ -182,14 +180,14 @@ body {
 }
 
 .mainblurb h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-montserrat);
     font-weight: 700;
     font-size: 2rem;
     color: gray;
 }
 
 .mainblurb p {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-Lato);
     font-weight: 500;
     font-size: 1rem;
     text-align: center;
@@ -200,7 +198,7 @@ body {
 .book-now {
     position: sticky;
     top: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-Montserrat);
     font-weight: 700;
     font-size: 2rem;
     display: block;
@@ -228,7 +226,7 @@ body {
 }
 
 .showcase h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-Montserrat);
     font-weight: 700;
     font-size: 1.5rem;
     text-align: center;
@@ -273,7 +271,7 @@ body {
 }
 
 .polaroid-blurb-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-Montserrat);
     font-weight: 700;
     font-size: 1.1rem;
     text-align: left;
@@ -281,7 +279,7 @@ body {
 }
 
 .polaroid-blurb {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-Lato);
     font-weight: 400;
     color: var(--gray);
     font-size: 1.1rem;
@@ -311,7 +309,7 @@ body {
     }
 
     .mainblurb h1 {
-        font-family: 'Montserrat', sans-serif;
+        font-family: var(--font-Montserrat);
         font-weight: 700;
         font-size: 2.5rem;
         color: gray;
@@ -319,7 +317,7 @@ body {
     }
 
     .mainblurb p {
-        font-family: 'Lato', sans-serif;
+        font-family: var(--font-Lato);
         font-weight: 500;
         font-size: 1.3rem;
         text-align: center;
@@ -336,7 +334,7 @@ body {
     .book-now {
         position: sticky;
         top: 0;
-        font-family: 'Montserrat', sans-serif;
+        font-family: var(--font-Montserrat);
         font-weight: 700;
         font-size: 2rem;
         display: block;
@@ -415,7 +413,7 @@ body {
 }
 
 .services h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-Montserrat);
     font-weight: 700;
     font-size: 1.5rem;
     text-align: center;
@@ -460,7 +458,7 @@ body {
 }
 
 .polaroid-blurb-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-Montserrat);
     font-weight: 700;
     font-size: 1.0rem;
     text-align: left;
@@ -468,7 +466,7 @@ body {
 }
 
 .polaroid-blurb-service-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-Montserrat);
     font-weight: 700;
     font-size: 1.8rem;
     text-align: left;
@@ -477,7 +475,7 @@ body {
 }
 
 .polaroid-blurb {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-Lato);
     font-weight: 400;
     color: var(--gray);
     font-size: 1.1rem;
@@ -485,7 +483,7 @@ body {
 }
 
 .polaroid-blurb-service {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-Lato);
     font-weight: 400;
     color: var(--gray);
     text-align: center;
@@ -495,7 +493,7 @@ body {
 }
 
 .service-activity {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-Lato);
     font-weight: 400;
     color: var(--gray);
     font-size: 1.1rem;
@@ -509,7 +507,7 @@ body {
 }
 
 .polaroid-blurb-price {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-Lato);
     font-weight: 400;
     color: var(--gray);
     font-size: 2rem;
@@ -522,12 +520,12 @@ body {
 }
 
 /* larger screens for services */
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 1000px) {
     .services {
         display: inline;
-        max-width: 20%;
+        max-width: 30%;
         padding: 0% 1%;
-        flex-grow: 1;
+        flex-shrink: 1;
     }
 }
 
@@ -552,7 +550,7 @@ body {
 }
 
 .book-now-form label {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-Montserrat);
     font-weight: 600;
 }
 
@@ -573,10 +571,8 @@ body {
 }
 
 .book-now-form .form-control {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-Lato);
 }
-
-
 
 /* Book Now Large Screen Tweaks */
 @media screen and (min-width: 680px) {
@@ -592,7 +588,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-Montserrat);
     padding: 10%;
     margin: 10%;
     flex-wrap: wrap;
