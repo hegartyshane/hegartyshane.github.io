@@ -7,6 +7,7 @@
     --yellow: #fff89aff;
     --pink: #ff8aaeff;
     --gray: #6d676eff;
+    --white-shade: #Fdfcfa;
 }
 
 /* 
@@ -116,12 +117,12 @@ body {
 
 /* navbar handling for larger devices */
 @media screen and (min-width: 680px) {
-    
+
     .navbar {
         position: sticky;
         top: 0;
     }
-    
+
     .navbar ul {
         flex-direction: row;
         justify-content: center;
@@ -169,6 +170,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: center;
     width: auto;
 }
 
@@ -209,6 +211,13 @@ body {
     border-radius: 2rem;
     border: none;
     text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: background 0.5s ease-in-out;
+}
+
+.book-now:hover {
+    background: var(--pink);
+    color: var(--yellow);
 }
 
 
@@ -237,7 +246,7 @@ body {
 .showcase .polaroid {
     width: 90%;
     padding: 0% 10% 0% 10%;
-    background-color: whitesmoke;
+    background-color: var(white-shade);
     padding: 1rem 1rem 0rem 1rem;
     box-shadow: 5px 7px 7px darkgrey;
     height: auto;
@@ -325,20 +334,20 @@ body {
     }
 
     .book-now {
-    position: sticky;
-    top: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    display: block;
-    width: 100%;
-    background: var(--yellow);
-    color: var(--pink);
-    text-align: center;
-    border-radius: 2rem;
-    border: none;
-    text-decoration: none;
-    }   
+        position: sticky;
+        top: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        display: block;
+        width: 100%;
+        background: var(--yellow);
+        color: var(--pink);
+        text-align: center;
+        border-radius: 2rem;
+        border: none;
+        text-decoration: none;
+    }
 }
 
 /* footer css */
@@ -395,7 +404,7 @@ body {
         padding-right: 1%;
         width: 5%;
         height: 5%;
-    } 
+    }
 }
 
 /* Our Services Main Content */
@@ -424,7 +433,7 @@ body {
 .services .polaroid {
     width: 90%;
     padding: 0% 10% 0% 10%;
-    background-color: whitesmoke;
+    background-color: var(white-shade);
     padding: 1rem 1rem 0rem 1rem;
     box-shadow: 5px 7px 7px darkgrey;
     height: auto;
@@ -491,7 +500,7 @@ body {
     color: var(--gray);
     font-size: 1.1rem;
     line-height: 1.3rem;
-    text-align:inherit;
+    text-align: inherit;
     list-style-position: inside;
 }
 
@@ -505,7 +514,7 @@ body {
     color: var(--gray);
     font-size: 2rem;
     line-height: 1.3rem;
-    text-align: center;   
+    text-align: center;
 }
 
 .discounted {
@@ -514,10 +523,123 @@ body {
 
 /* larger screens for services */
 @media screen and (min-width: 680px) {
-.services {
-    display: inline;
-    max-width: 20%;
-    padding: 0% 1%;
-    flex-grow: 1;
+    .services {
+        display: inline;
+        max-width: 20%;
+        padding: 0% 1%;
+        flex-grow: 1;
+    }
 }
+
+.showcase-full {
+    min-width: inherit;
+}
+
+/* Google Maps Code */
+
+/* Book Now Form Formatting */
+.form-container {
+    width: 100%;
+    text-align: center;
+}
+
+.book-now-form {
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.book-now-form label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.book-now-form input, 
+.book-now-form textarea,
+.book-now-form .form-control
+ {
+    min-width: 200px;
+    border-style: solid;
+    border-color: var(--pink);
+    border-width: 3px;
+}
+
+.book-now-form .form-group {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.book-now-form .form-control {
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+/* Book Now Large Screen Tweaks */
+@media screen and (min-width: 680px) {
+    .form-container {
+        display: inline;
+        max-width: 70%;
+        flex-grow: 1;
+    }
+}
+
+/* contact us */
+.email-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10%;
+    margin: 10%;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.email-container a:link,
+.email-container a:visited,
+.email-container a .active {
+    color: var(--blue-darker);
+    font-size: 2rem;
+}
+
+.email-container a:hover {
+    color: var(--blue);
+}
+
+.email-container a:focus {
+    color: var(--pink);
+}
+
+/* Find Us Used this pattern: https://blog.duda.co/responsive-google-maps-for-your-website */
+.map-main {
+    padding: 1rem; 
+    background-color: white;
+}
+
+.map-responsive{
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    z-index: 0;
+}
+
+.map-responsive iframe{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+@media screen and (min-width: 680px) {
+    .map-main {
+        display: inline;
+        padding: 3rem;
+    }
 }
