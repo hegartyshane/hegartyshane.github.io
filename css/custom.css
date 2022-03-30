@@ -266,7 +266,7 @@ body {
 .polaroid-blurb-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     text-align: left;
     color: var(--gray)
 }
@@ -275,7 +275,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: var(--gray);
-    font-size: .9rem;
+    font-size: 1.1rem;
     line-height: 1.3rem;
 }
 
@@ -461,7 +461,7 @@ body {
 .polaroid-blurb-service-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: left;
     color: var(--gray);
     text-align: center;
@@ -471,7 +471,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: var(--gray);
-    font-size: .9rem;
+    font-size: 1.1rem;
     line-height: 1.3rem;
 }
 
@@ -480,7 +480,7 @@ body {
     font-weight: 400;
     color: var(--gray);
     text-align: center;
-    font-size: .9rem;
+    font-size: 1.1rem;
     line-height: 1.3rem;
     text-align: center;
 }
@@ -489,7 +489,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: var(--gray);
-    font-size: .9rem;
+    font-size: 1.1rem;
     line-height: 1.3rem;
     text-align:inherit;
     list-style-position: inside;
